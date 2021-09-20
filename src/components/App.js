@@ -1,5 +1,5 @@
 
-import blackboard from '../images/blackboard.jpg';
+
 
 import '../styles/App.scss';
 
@@ -7,7 +7,7 @@ import '../styles/App.scss';
 function App() {
   return (
     <div className="App">
-      <div className="page" style={{ backgroundImage: `url(${blackboard})` }}>
+      <div className="page" >
         <header>
           <h1 className="header__title">Juego del ahorcado</h1>
         </header>
@@ -41,9 +41,9 @@ function App() {
             <form className="form">
               <label className="title" htmlFor="last-letter">Escribe una letra:</label>
               <input
-                autocomplete="off"
+                autoComplete="off"
                 className="form__input"
-                maxlength="1"
+                maxLength="1"
                 type="text"
                 name="last-letter"
                 id="last-letter"
